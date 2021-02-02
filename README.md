@@ -1,4 +1,4 @@
-Домашнее задание к интенсиву «[Создаём сайт-приложение для трёх платформ за один день](https://webinar.skillbox.ru/frontend-app)», проведенному SkillBox 30 января 2021. Запись интенсива доступна [здесь](https://live.skillbox.ru/webinars/code/sozdayom-sait-prilozhenie-dlya-3-platform-za-odin-den300121/).
+Домашнее задание к интенсиву «[Создаём сайт-приложение для трёх платформ за один день](https://webinar.skillbox.ru/frontend-app)», проведенному SkillBox 30 января 2021. Запись интенсива доступна [здесь](https://live.skillbox.ru/webinars/code/sozdayom-sait-prilozhenie-dlya-3-platform-za-odin-den300121/). Макет для верстки доступен в [Figma](https://www.figma.com/file/Pvf4Uv4ShOFVzczuHvsxyy/Avia_Tickets-(Copy)).
 
 # Домашнее задание. Часть 1. Веб-приложение
 

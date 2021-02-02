@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+.app {
+  height: 100vh;
+}
+
+body {
+  font-family: "SF UI Display", Arial, sans-serif;
+  text-align: center;
+  background-color: #1A2E74;
+  color: white;
+}
+
+.heading {
+  margin-top: 35px;
+  font-size: 30px;
+  line-height: 1.34;
+  font-weight: bold;
+}
+
+.heading.is-final {
+  margin-top: 40px;
+  margin-bottom: 5px;
+  max-width: 430px;
+  line-height: 1.2;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  padding: 40px;
+  background: #2E4288;
+  border-radius: 10px;
+}
+
+.input {
+  height: 45px;
+  width: 100%;
+  padding: 14px 17px;
+  font-size: 17px;
+  line-height: 1;
+  border-radius: 10px;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+.button {
+  height: 45px;
+  padding: 14px 50px;
+  min-width: 186px;
+  margin-left: 30px;
+  border-radius: 10px;
+  border: 10px;
+  background: #456BF2;
+  color: white;
+  outline: none;
+}
+
+.button[disabled] {
+  background: #3C5BC8;
+  color: #ABB3CF;
+}
+
+.button:active {
+  background-image: linear-gradient(120deg, #456BF2, #509cda);
+  box-shadow: inset 2px 4px 15px rgba(72, 136, 255, 0.4), 2px 4px 15px rgba(67, 92, 236, 0.4);
+}
+
+.button.is-final {
+  margin-top: 40px;
+  min-width: 240px;
+  margin-left: 0;
+}
+
+.label {
+  flex-grow: 1;
+  position: relative;
+}
+
+.label-text {
+  position: absolute;
+  top: -25px;
+  left: 17px;
+  font-size: 12px;
+  line-height: 17px;
+  color: #A6B4D0;
+}
+
+.app,
+.js-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.js-container {
+  position: absolute;
+  display: flex;
+  max-width: 666px;
+  top: max(25px, 15%);
+  width: 100%;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.33s;
+  transition-property: opacity, transform;
+  transform: translateY(100%) scale(0.7);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.js-container.code {
+  max-width: 521px;
+}
+
+.js-container.is-active {
+  transform: none;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.thank-you {
+  font-size: 30px;
+  line-height: 1.2;
+  color: #A6B4D0;
+}
+
+.final {
+  max-width: 430px;
+}
+
+@media (max-height: 520px) and (min-width: 768px){
+  .js-container {
+    top: 25px;
+  }
+}
+
+@media (max-height: 550px) and (min-width: 768px){
+    .js-container {
+      top: max(25px, 10%);
+  }
+}
+
+@media (max-width: 767px) {
+  .icon {
+    width: 90px;
+    height: 90px;
+  }
+
+  .heading {
+    margin-top: 11px;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .heading.is-final {
+    margin-top: 11px;
+  }
+
+  .js-container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .lastpage {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .content {
+    flex-direction: column;
+    margin-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 25px;
+    background: none;
+  }
+
+  .label-text {
+    top: -22px;
+  }
+    
+  .thank-you {
+    font-size: 17px;
+  }
+
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 186px; 
+  }
+
+  .button.is-final {
+    margin-top: 18px;
+  }
+
+}
+
+/* Node.js / Electron / Ionic (mobile app framework) SECTION: */
+
+::-webkit-scrollbar {
+  display: none;
+}

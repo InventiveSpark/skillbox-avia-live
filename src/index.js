@@ -26,11 +26,11 @@ const createWindow = () => {
     frame: true,
     resizable: true,
     webPreferences: {
-        // https://github.com/electron/electron/issues/23506
-        // Deprecate the flag and instruct folks to use contextIsolation: true
-        // instead of nodeIntegration: false in Electron 10
-        nodeIntegration: false,
-        contextIsolation: true
+      // https://github.com/electron/electron/issues/23506
+      // Deprecate the flag and instruct folks to use contextIsolation: true
+      // instead of nodeIntegration: false in Electron 10
+      nodeIntegration: false,
+      contextIsolation: true
     }
   });
 

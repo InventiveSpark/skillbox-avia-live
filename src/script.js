@@ -31,12 +31,10 @@ function resetApp() {
 
 const pages = document.querySelectorAll(".js-container");
 
-var activePageN = defineActivePage();
-
 function defineActivePage() {
-  var activePageExists = false;
-  var activePage = 0;
-  var i;
+  let activePageExists = false;
+  let activePage = 0;
+  let i;
   for (i = 0; i < (pages.length - 1); i+=1) {
     if (pages[i].classList.contains("is-active")) {
       activePageExists = true;
@@ -49,6 +47,8 @@ function defineActivePage() {
   }
   return activePage;
 }
+
+let activePageN = defineActivePage();
 
 function changeContainer() {
   pages[activePageN].classList.remove("is-active");

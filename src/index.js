@@ -20,9 +20,9 @@ const createWindow = () => {
     minWidth: 320,
     minHeight: 580,
     title: "Skillbox Avia",
-    //Hide Menu (available on <L-Alt>):
+    // Hide Menu (available on <L-Alt>):
     autoHideMenuBar: true,
-    //Frameless Window:
+    // Frameless Window:
     frame: true,
     resizable: true,
     webPreferences: {

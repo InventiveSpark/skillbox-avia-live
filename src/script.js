@@ -35,7 +35,7 @@ function defineActivePage() {
   let activePageExists = false;
   let activePage = 0;
   let i;
-  for (i = 0; i < (pages.length - 1); i+=1) {
+  for (i = 0; i < (pages.length - 1); i += 1) {
     if (pages[i].classList.contains("is-active")) {
       activePageExists = true;
       activePage = i;
@@ -52,19 +52,21 @@ let activePageN = defineActivePage();
 
 function changeContainer() {
   pages[activePageN].classList.remove("is-active");
-  activePageN = (activePageN < (pages.length - 1) ? (activePageN + 1) : 0);
+  activePageN = (
+    activePageN < (pages.length - 1) ? (activePageN + 1) : 0
+    );
   pages[activePageN].classList.add("is-active");
   setTimeout(resetApp, 463);
 }
 
 const form1 = document.getElementById("form1");
-form1.onsubmit = function(event) {
+form1.onsubmit = function (event) {
   event.preventDefault();
   changeContainer();
 };
 
 const form2 = document.getElementById("form2");
-form2.onsubmit = function(event) {
+form2.onsubmit = function (event) {
   event.preventDefault();
   changeContainer();
 };
